@@ -1,6 +1,6 @@
 import cv2
-# from flask import Flask, jsonify # Эти строки не нужны для теста функции в Colab
-# from flask_cors import CORS # Эти строки не нужны для теста функции в Colab
+from flask import Flask, jsonify
+from flask_cors import CORS
 
 PARKING_SPOTS = [
     (50, 50, 150, 150),  
