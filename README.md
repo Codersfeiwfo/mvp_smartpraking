@@ -1,3 +1,13 @@
+Понял. Значит, вы отправили файлы из папки smpark, но без самой папки smpark как корневой директории в репозитории. То есть, backend.py, index.html и im2.jpg лежат прямо в корне репозитория на GitHub, а не внутри папки smpark/.
+
+Это не критично и встречается довольно часто. В таком случае, в файле README.md нужно изменить секцию "Project Structure" и путь для cd.
+
+Вот как должен выглядеть README.md, если файлы находятся прямо в корне репозитория (без вложенной папки smpark):
+
+README.md (English Version - Adjusted for root files)
+
+Markdown
+
 # Smart Parking System
 
 This project implements a simple parking occupancy monitoring system using image processing on the backend (Python Flask) and a web interface for real-time status display.
@@ -8,11 +18,15 @@ The system analyzes a parking lot image, identifies occupied and free parking sp
 
 ## Project Structure
 
-smpark/
-├── backend.py        # Main backend script (Flask server, image analysis logic)
-├── index.html        # Frontend (web interface for status display)
-├── im2.jpg           # Parking image for analysis (can be another, e.g., im_test.png)
-└── README.md         # This file
+.
+├── backend.py 
+
+├── index.html   
+
+├── im2.jpg     
+
+└── README.md      
+
 
 
 ## Requirements
@@ -32,15 +46,16 @@ Setup and Running
 The project consists of two parts: the backend (Flask server) and the frontend (a web page served by a simple HTTP server). Both parts must be running simultaneously.
 
 Clone the Repository or Download Files:
-(If you are already on GitHub, this step is not needed. Otherwise, download the ZIP archive or use git clone.)
+(If you have already downloaded the files, ensure they are extracted into a single project folder.)
 
 Navigate to the Project Directory:
 
+Open your terminal/command prompt and navigate to the directory where you cloned or extracted the project files. This will be the directory containing backend.py, index.html, etc.
+
 Bash
 
-cd C:\Users\user\smpark
-(Or the path to your project folder)
-
+cd YOUR_PROJECT_FOLDER_PATH_HERE
+# Example: cd C:\Users\user\Downloads\mvp_smartpraking-main
 Start the Backend (Flask Server):
 
 Open the first terminal (e.g., PowerShell or Git Bash) in the project directory and execute the following commands:
