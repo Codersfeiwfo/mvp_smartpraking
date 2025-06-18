@@ -1,13 +1,3 @@
-Понял. Значит, вы отправили файлы из папки smpark, но без самой папки smpark как корневой директории в репозитории. То есть, backend.py, index.html и im2.jpg лежат прямо в корне репозитория на GitHub, а не внутри папки smpark/.
-
-Это не критично и встречается довольно часто. В таком случае, в файле README.md нужно изменить секцию "Project Structure" и путь для cd.
-
-Вот как должен выглядеть README.md, если файлы находятся прямо в корне репозитория (без вложенной папки smpark):
-
-README.md (English Version - Adjusted for root files)
-
-Markdown
-
 # Smart Parking System
 
 This project implements a simple parking occupancy monitoring system using image processing on the backend (Python Flask) and a web interface for real-time status display.
